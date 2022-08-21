@@ -50,3 +50,11 @@ body{
    display: block;
    
 }
+
+@media screen and (max-width:576px) {
+      .hero-description{
+         text-overflow: ellipsis!important ;
+         overflow: hidden !important;
+         white-space: nowrap !important; 
+      }
+}
