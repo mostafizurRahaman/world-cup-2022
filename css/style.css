@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,700&display=swap');
+
+body{
+   font-family: "Poppins", sans-serif;
+   letter-spacing: 0.8px;
+}
 #header{
    background:url(../img/header-bg.png) no-repeat;
    height: 85vh;   
@@ -14,11 +20,11 @@
   position: absolute;
   right: 0%;
   bottom: 0%;
-  transform: translate(-50%,70%);
-  -webkit-transform: translate(-50%,70%);
-  -moz-transform: translate(-50%,70%);
-  -ms-transform: translate(-50%,70%);
-  -o-transform: translate(-50%,70%);
+  transform: translate(-20%,70%);
+  -webkit-transform: translate(-20%,70%);
+  -moz-transform: translate(-20%,70%);
+  -ms-transform: translate(-20%,70%);
+  -o-transform: translate(-20%,70%);
 }
 
 #header img{
@@ -31,8 +37,16 @@
    -ms-transform: 25%, 25%;
    -o-transform: 25%, 25%;
    z-index: -1;
+   opacity: 0.5;
 }
 
 .fontSize{
    font-size: 1.2rem;
+   font-family: "Poppins", sans-serif;
+}
+
+.title-2:after{
+   content: url(../img/title-2-bottom.png);
+   display: block;
+   
 }

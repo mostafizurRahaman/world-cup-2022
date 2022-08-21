@@ -17,7 +17,7 @@
          <div class="row justify-content-center ">
             <div class="hero-box text-center text-white w-75 h-auto  ">
                <h1 class="display-3 fw-bold mb-5 position-relative text-danger" >Most Famous Five Players </h1>
-               <p class=" text-capitalize fs-3">You can see here most famous football players in the world.You can select your favourite 5 players and create a squad with them. All also calculate your team expenses for players, manage and coach</p>     
+               <p class=" text-capitalize fs-5">You can see here most famous football players in the world.You can select your favourite 5 players and create a squad with them. All also calculate your team expenses for players, manage and coach</p>     
                <img src="img/Card-psg.png" alt="" >         
             </div>
          </div>                     
@@ -25,11 +25,11 @@
    </header>
    <!-- header End -->
    <!-- main section start -->
-   <!-- <main class="container">
+   <main class="container">
       <section>
          <div class="row g-5">
             <!-- players details start -->
-            <div class="col-12 col-md-9">
+            <div class="col-12 col-lg-9">
                <div class="row g-4">
                   <!-- card one -->
                   <div class="col-6 col-lg-4">
@@ -100,11 +100,12 @@
                </div>
             </div>
             <!-- player details end -->
-            <div class=" col-12 col-md-3">
+            <div class=" col-12 col-lg-3">
                <!-- aside section -->
-              <aside class="row text-white p-4 rounded-3" style="background:#000; height: 23rem;">
-                  <div class="col-12">
-                     <h2 class="displasy-5 mb-4 font-bold text-center text-uppercase">Select- 5 </h2>
+              <aside class="row text-white g-4" >
+               <!-- selected player section start -->
+                  <div class="col-12  p-4 rounded-3" style="background:#000; height: 23rem;">
+                     <h2 class="mb-4 font-bold text-center text-uppercase title-2">Select- 5 </h2>
                      <ul>
                         <li class="mb-2 text-uppercase text-white fontSize">Nymer</li>
                         <li class="mb-2 text-uppercase text-white fontSize">Messi</li>
@@ -113,11 +114,23 @@
                         <li class="mb-2 text-uppercase text-white fontSize">Mohammad Salha</li>
                      </ul>
                   </div>
+               <!-- selected player section end -->
+               <!-- Buget section start -->
+               <div class="bugetSection col-12 p-2 rounded-3" style="background:#000; height:35rem; ">
+                  <h2 class="title-2 text-center text-uppercase mb-4">Budget</h2>
+                  <p class="d-flex w-100 justify-content-around align-items-center fw-bold fs-6text-capitalize "><label for="#perPlayer" class="">Per Player :</label> <input  class="w-50 py-2  ps-3 fw-bold " type="text" name="perPlayer" id="#perPlayer" placeholder="Salary"></p>
+                  <a href="#" class="btn btn-lg fw-bold rounded-1 btn-primary px-1 py-2 my-4 text-capitalize w-75 mx-auto d-block" id="calculate-btn">Calculate</a>
+                  <p class=" text-capitalize">player expenses : <span id="palyerExpenses" class="ms-3">00</span></p>
+                  <p class="d-flex w-100 justify-content-around align-items-center fw-bold  text-capitalize"><label for="#manager-fee" class="">Manager :</label> <input  class="w-50 py-2  ps-3 fw-bold " type="text" name="manager" id="#manager-fee" placeholder="Salary"></p>
+                  <p class="d-flex w-100 justify-content-around align-items-center fw-bold  text-capitalize"><label for="#coach-fee" class="">Coach &nbsp;&nbsp;&nbsp;: </label> <input  class="w-50 py-2  ps-3 fw-bold " type="text" name="manager" id="#coach-fee" placeholder="Salary"></p>
+                  <a href="#" class="btn btn-lg fw-bold rounded-1 btn-primary  py-2 my-4 text-capitalize w-75 mx-auto d-block fs-6"  id="calculate-total">Calculate total</a>
+               </div>
+               <!-- Buget section end -->
               </aside>
             </div>
          </div>
       </section>
-   </main> -->
+   </main>
    <!-- main section end -->
 
 <!-- Bootstrap  js cnd link-->
