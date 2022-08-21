@@ -1,0 +1,38 @@
+#header{
+   background:url(../img/header-bg.png) no-repeat;
+   height: 85vh;   
+   background-size:cover;
+   background-position: left center;
+   position: relative;
+   z-index: -2;
+}
+#header h1{
+   position: relative;
+}
+#header h1:before{
+  content: url(../img/line-hero-marker.png);
+  position: absolute;
+  right: 0%;
+  bottom: 0%;
+  transform: translate(-50%,70%);
+  -webkit-transform: translate(-50%,70%);
+  -moz-transform: translate(-50%,70%);
+  -ms-transform: translate(-50%,70%);
+  -o-transform: translate(-50%,70%);
+}
+
+#header img{
+   position: absolute;
+   top: 0;
+   right: 0;
+   transform: 25%, 25%;
+   -webkit-transform: 25%, 25%;
+   -moz-transform: 25%, 25%;
+   -ms-transform: 25%, 25%;
+   -o-transform: 25%, 25%;
+   z-index: -1;
+}
+
+.fontSize{
+   font-size: 1.2rem;
+}
