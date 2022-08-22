@@ -1,9 +1,10 @@
 /*
 **** funciton for select 5 fovourite player from the players list
  */
+// slected payerscontainer use outside of the function for use globaly 
+const selectedPlayersContainer = document.getElementById('selected-player');
 function fovuritePlayer(player){
-   const playerName = player.parentNode.children[0].innerText; 
-   const selectedPlayersContainer = document.getElementById('selected-player'); 
+   const playerName = player.parentNode.children[0].innerText;     
    const li = document.createElement('li'); 
    li.innerText = playerName; 
    
@@ -16,6 +17,7 @@ function fovuritePlayer(player){
 
    player.setAttribute("disabled",true);
    player.classList.add('disabled-btn');
+   setElementValue('player-counter',selectedPlayersContainer.children.length);
 }
 
 /*
@@ -59,7 +61,7 @@ document.getElementById('calculate-btn').addEventListener('click', function(){
    }else if(perPlayerSalary <0){
       alert("Invalid!!!! Please Enter a Positive Number: ")
    }else{
-     const playerExpenses = perPlayerSalary * 5; 
+     const playerExpenses = perPlayerSalary * selectedPlayersContainer.children.length; 
      setElementValue('palyerExpenses', playerExpenses); 
    }
 }); 
